@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+<a href="/logout">Logout</a> <br> <br>
+<h2>Other reason</h2>
+<form action="/other/" method="POST">
+	<input type="text" name="text" placeholder="Other reason">
+	<input type="submit" name="hi">
+
+</form>
+{% endif %}
+{% endblock %}

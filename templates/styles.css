@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+}
+
+.logbox{
+    width: 300px;
+    height: 370px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 95px 25px;
+}
+
+h1{
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.logbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.logbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logbox input[type="text"], input[type="password"]{
+    margin: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.logbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #00CCA5;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.logbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #16A085;
+    color: #23527c;
+}

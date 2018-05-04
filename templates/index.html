@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+   
+	{% if data %}
+	<h3>{{data}}</h3>
+	{% else %}
+
+	<a href="/logout">Logout</a> <br> <br>
+	<form action="" method="POST">
+	  <input type="username" name="username" placeholder="Username">
+	  <input type="submit" value="Finds">
+	</form>
+	{% endif %}
+
+{% else %}
+<style >
+.first{
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+#logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -1500px;
+    /*left: calc(50% - 60px);*/
+}
+</style>
+<div class="first">
+	<img src="TL_logo.png" id="logo">
+	<h1><a href="/login">Login</a></h1> 
+	<h1><a href="/register">Register</a></h1>
+</div>
+{% endif %}
+{% endblock %}

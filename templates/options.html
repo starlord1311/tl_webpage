@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+{% if session['logged_in'] %}
+<a href="/logout">Logout</a> <br> <br>
+<h2>Why are you using TL</h2>
+<form action="/reason/" method="POST">
+	<input type="submit" name="submit" value="Option1">Option 1</input><br><br>
+	<input type="submit" name="submit" value="Option2">Option 2</input><br><br>
+	<input type="submit" name="submit" value="Option3">Option 3</input><br><br>
+	<input type="submit" name="submit" value="other">Other</input><br><br>
+</form>
+{% endif %}
+{% endblock %}

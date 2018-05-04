@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Flask Login Example</title>
+</head>
+<style>
+.base{
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -170px;
+}
+.img{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -60px;
+    left: calc(50% - 60px);
+}
+</style>
+<body>
+	<div class="img">
+		<img src="C:\Users\padhy\Desktop\wweb3\TL_logo.png" id="logo">
+	</div>
+    <div class = "base">
+	   	<h1><a href="/">Flask Login Example</a></h1>
+	</div>
+		
+	<hr>
+	{% block content %}{% endblock %}
+</body>
+</html>
