@@ -9,7 +9,7 @@ db = SQLAlchemy(app)
 class User(db.Model):
 	""" Create user table"""
 	id = db.Column(db.Integer, primary_key=True)
-	rollno = db.Column(db.Integer(80))
+	rollno = db.Column(db.Integer())
 	email = db.Column(db.String(80))
 	password = db.Column(db.String(80))
 
@@ -20,28 +20,28 @@ class User(db.Model):
 
 class Reason1(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
-	roll_no = db.Column(db.Integer(80))
+	roll_no = db.Column(db.Integer())
 
 	def __init__(self,roll_no):
 		self.roll_no=roll_no
 
 class Reason2(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
-	roll_no = db.Column(db.Integer(80))
+	roll_no = db.Column(db.Integer())
 	
 	def __init__(self,roll_no):
 		self.roll_no=roll_no
 
 class Reason3(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
-	roll_no = db.Column(db.Integer(80))
+	roll_no = db.Column(db.Integer())
 	
 	def __init__(self,roll_no):
 		self.roll_no=roll_no
 
 class Other(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
-	roll_no = db.Column(db.Integer(80))
+	roll_no = db.Column(db.Integer())
 	reason = db.Column(db.String(200))
 
 	def __init__(self,roll_no,reason):
